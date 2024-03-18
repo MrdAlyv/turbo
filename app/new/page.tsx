@@ -28,7 +28,7 @@ const New = () => {
 
 
     const addNewAnnouncement = () => {
-        dispatch(addNew({ brand: selectedBrand, mark: markBrand, fuel: CarFuel, mileage: carMileage, carImage: file,  year: carYear }))
+        dispatch(addNew({ brand: selectedBrand, mark: markBrand, fuel: CarFuel, mileage: carMileage, carImage: file, year: carYear }))
         router.push("/")
     }
 
@@ -47,7 +47,7 @@ const New = () => {
                 <ul className='list-disc list-inside mt-3 m-4'>
                     <li className=' text-sm'> Üç ay ərzində bir nəqliyyat vasitəsi yalnız bir dəfə pulsuz dərc oluna bilər.</li>
                     <li className=' text-sm'> Üç ay ərzində təkrar və ya oxşar elanlar (marka/model, rəng) ödənişlidir.</li>
-                    <li className=' text-sm'> Elanınızı saytın ön sıralarında görmək üçün "İrəli çək" xidmətindən istifadə edin.</li>
+                    <li className=' text-sm'> Elanınızı saytın ön sıralarında görmək üçün `İrəli çək` xidmətindən istifadə edin.</li>
                 </ul>
 
             </div>
