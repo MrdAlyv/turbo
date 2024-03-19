@@ -36,7 +36,7 @@ const New = () => {
     console.log(File)
 
     return (
-        <div key={0} className='container mx-auto'>
+        <div className='container mx-auto'>
             <div className='bg-secondary py-2 px-4 m-4'>
                 <h4>
                     ELAN YERLƏŞDİRMƏK
@@ -62,7 +62,7 @@ const New = () => {
                         {brands && brands.map((item: any) => {
                             return (
 
-                                <option>
+                                <option key={item}>
                                     {item}
                                 </option>
                             )
