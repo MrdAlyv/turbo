@@ -14,7 +14,7 @@ type Icard = {
     mileage: string,
     carImage: HTMLImageElement,
     year: string,
-    id:any
+    item: any
 
 }
 // export interface IStateMark{
