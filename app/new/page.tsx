@@ -36,7 +36,7 @@ const New = () => {
     console.log(File)
 
     return (
-        <div className='container mx-auto'>
+        <div key={0} className='container mx-auto'>
             <div className='bg-secondary py-2 px-4 m-4'>
                 <h4>
                     ELAN YERLƏŞDİRMƏK
