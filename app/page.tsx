@@ -11,7 +11,7 @@ export default function Home() {
     <div>
       <Nav />
 
-      <div className="grid grid-cols-3">
+      <div className="grid grid-cols-3 max-sm:flex max-sm:flex-wrap gap-y-7 mx-16 mb-16">
         {cards && cards.map(({ brand, mark, fuel, mileage, carImage, year }) => (
           <div className="mt-6 mx-6 shadow-lg rounded-xl  w-64  h-72 p-4  ">
             <Image src={carImage} alt="carImage" width={130} height={60} className=" w-full"></Image>
