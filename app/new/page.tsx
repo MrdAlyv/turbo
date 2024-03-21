@@ -16,16 +16,12 @@ const New = () => {
     const fetcher = (...args: any) => fetch(args).then(res => res.json())
     const [file, setFile] = useState("");
     function handleChange(e: any) {
-        console.log(e.target.files);
         setFile(URL.createObjectURL(e.target.files[0]));
     }
     const { data, error, isLoading } = useSWR('/api/brands', fetcher);
 
     const brands = data?.results ? Array.from(new Set(data.results.map((item: any) => item.make))) : [];
-    console.log(markBrand)
-    console.log(CarFuel)
-    console.log(carMileage)
-
+ 
 
     const addNewAnnouncement = () => {
         dispatch(addNew({ brand: selectedBrand, mark: markBrand, fuel: CarFuel, mileage: carMileage, carImage: file, year: carYear }))
@@ -33,7 +29,6 @@ const New = () => {
     }
 
 
-    console.log(File)
 
     return (
         <div className='container mx-auto'>
